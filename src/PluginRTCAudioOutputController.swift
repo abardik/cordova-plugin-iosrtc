@@ -67,7 +67,7 @@ class PluginRTCAudioOutputController {
 		//Needs to be Record or PlayAndRecord to use audioRouteOverride:
 		if needRecord {
 			do {
-				try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playAndRecord)
+				//try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playAndRecord)
 			} catch {
 				NSLog("iosrtcPlugin#selectAudioOutputSpeaker() | ERROR \(error)")
 			};
@@ -75,7 +75,7 @@ class PluginRTCAudioOutputController {
 		}
 		else {
 			do {
-				try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
+				//try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
 			} catch {
 				NSLog("iosrtcPlugin#selectAudioOutputSpeaker() | ERROR \(error)")
 			};
